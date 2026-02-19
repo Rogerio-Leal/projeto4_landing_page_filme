@@ -1,0 +1,31 @@
+@use 'variaveis';
+
+.cast {
+    padding: 12px;
+    margin-top: 48px;
+
+    
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        flex-wrap: wrap;
+        align-content: space-around;
+        gap: 12px;
+
+        &__item {
+            display: block;
+            text-align: center;
+
+            img {
+                height: 320px;
+                width: 240px;
+            }
+
+            span {
+                display: block;
+                color: variaveis.$corTextoSecundario;
+                padding: 12px;
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@use 'variaveis';
+
+.gallery {
+    padding: 12px;
+    margin-top: 48px;
+
+    &__button {
+        padding: 10px 20px;
+        margin-left: 12px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        background-color: variaveis.$cordeFundo;
+        color: variaveis.$corTextoPrincipal;
+        border: solid 1px variaveis.$corTextoPrincipal;
+        font-weight: bold;
+        border-radius: 8px;
+        transition: 0.5s;
+
+        &:hover {
+        background-color: variaveis.$corButtonHover;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        flex-wrap: wrap;
+        align-content: space-around;
+        gap: 12px;
+        transition: opacity 0.5s ease;
+
+        img {
+            width: 480px;
+            height: 360px;
+        }
+
+        &--hidden {
+        display: none;
+        opacity: 0;
+        }
+    }
+}

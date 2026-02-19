@@ -1,0 +1,17 @@
+@use 'variaveis';
+
+.details {
+    padding: 12px;
+    margin-top: 48px;
+
+    h2 {
+        color: variaveis.$corTextoPrincipal;
+        border-bottom: 1px solid variaveis.$corTextoPrincipal;
+        margin-bottom: 14px;
+    }
+
+    p {
+        color: variaveis.$corTextoSecundario;
+        margin-top: 14px;
+    }
+}

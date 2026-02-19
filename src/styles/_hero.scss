@@ -1,0 +1,14 @@
+@use 'variaveis';
+
+.hero {
+    height: 60vw;
+    background-image: url(../images/guerra_infinita_hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.video {
+    position: absolute;
+    margin-top: 48px;
+    margin-left: 240px;
+}
